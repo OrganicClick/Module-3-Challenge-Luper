@@ -1,5 +1,6 @@
 // Assignment code here
 
+//Creates HTML form element
 var formSection = document.createElement("form");
 
 // Get references to the #generate element
