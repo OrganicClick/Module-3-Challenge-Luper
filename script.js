@@ -70,6 +70,11 @@ function generateForm () {
   passwordLengthInput.min = "8"
   passwordLengthInput.max = "128"
 
+  // Appends the passwordLengthLabel and passwordLengthInput to the passwordLengthItem
+  passwordLengthItem.appendChild(passwordLengthLabel)
+  passwordLengthItem.appendChild(passwordLengthInput)
+
+
   // Creates a list item, to be put in the requirementList, prompting user to make selections on the character
   // types to include in their generated password
   var passwordCharacterTypeItem = document.createElement("li");
