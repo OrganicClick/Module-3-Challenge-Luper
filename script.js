@@ -106,13 +106,23 @@ function generateForm () {
   confirmButton.innerText = 'CONFIRM';
 
   // Adds eventListener to button for user to click, which will call the confirmSelections function
-  confirmButton.addEventListener("click", confirmSelections)
+  confirmButton.addEventListener("click", confirmSelections);
 
+  // Appends confirmButton to formSection directly
+  formSection.appendChild(confirmButton);
 }
 //----------------------------------
 //----------------------------------
 
 //--- FUNCTION: generateCheckbox () ---
+
+
+//----------------------------------  
+//----------------------------------
+
+
+//--- FUNCTION: confirmSelections () ---
+
 
 
 
