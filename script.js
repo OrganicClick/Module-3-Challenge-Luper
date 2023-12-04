@@ -132,6 +132,8 @@ function generateCheckbox () {
   // Appends the checkbox variable to the checkboxContainer element
  checkboxContainer.appendChild(checkbox);
 
+ // Returns value of checkboxContainer
+ return checkboxContainer;
 }
 
 
