@@ -1,5 +1,28 @@
-// Assignment code here
+// The following assignment can be outlined into discrete sections, primarily based on functions called.
+// For my version of the assignment, after the user clicks the "Generate Password" button, a form containing
+// user instructions and prompts for user to follow and input appropriate information (e.g. desired password length, character types)
+// will be generated. After user appropriately completes the form, they will confirm their selections by clicking
+// a "Confirm" button. The application will then intake the user's input, and output a random password in the "Your Secure Password"
+// text field.
+//
+// For the purpose of personal organization, an outline for the JavaScript used in this application could be defined as follows:
+//
+// --- APPLICATION OUTLINE ---
+//
+// Global Variable: var generateBtn = document.querySelector("#generate");
+//
+// Function: generatePassword ();
+//
+// Function: generateForm ();
+//
+// Function: generateCheckbox ();
+//
+// Function.Eventlistener ();
+// 
+// Function: writePassword ();
 
+
+//
 //-- Form Section Code --
 
 //Creates HTML form element
