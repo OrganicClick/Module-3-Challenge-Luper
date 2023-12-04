@@ -122,7 +122,8 @@ function generateForm () {
 // Creates function that will generate checkboxes for user to select the character type options for their randomly generated
 // password.
 function generateCheckbox () {
- 
+  // Creates a <div> container HTML element to contain the created checkbox
+ var checkboxContainer = document.createElement("div");
 }
 
 
