@@ -38,7 +38,8 @@ var generateBtn = document.querySelector("#generate");
 //--- FUNCTION: generateForm () ---
 
 //Creates HTML form element
-var formSection = document.createElement("form");
+function generateForm () {
+  var formSection = document.createElement("form");
 
 //Creates a HTML p element and user instructions informing user they will need to input appropriate
 //answers if they want a random password to be generated.
@@ -52,6 +53,9 @@ var userInstructions = document.createElement("p")
  // Adds a list element, which will contain password requirement prompts, as well as user input sections
 var requirementList = document.createElement("ul")
 
+
+
+}
 //----------------------------------
 //----------------------------------
 
