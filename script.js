@@ -60,6 +60,16 @@ function generateForm () {
   // Creates a list item, to be put in the requirementList, prompting user for input for password length
   var passwordLengthItem = document.createElement("li");
 
+  // Create a prompt for user notifying them of the character length they can select
+  var passwordLengthLabel = document.createElement("label")
+  passwordLengthLabel.textContent = `MUST contain at least 8 characters and no more than 128 characters.`
+
+  // Creates an input area (and parameters for input) for password length
+  var passwordLengthInput = document.createElement("input");
+  passwordLengthInput.type = "number";
+  passwordLengthInput.min = "8"
+  passwordLengthInput.max = "128"
+
   // Creates a list item, to be put in the requirementList, prompting user to make selections on the character
   // types to include in their generated password
   var passwordCharacterTypeItem = document.createElement("li");
