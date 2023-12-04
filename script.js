@@ -21,9 +21,10 @@
 // 
 // Function: writePassword ();
 
+//----------------------------------
+//----------------------------------
 
-//
-//-- Form Section Code --
+//--- FUNCTION: generateForm () ---
 
 //Creates HTML form element
 var formSection = document.createElement("form");
@@ -40,12 +41,27 @@ var userInstructions = document.createElement("p")
  // Adds a list element, which will contain password requirement prompts, as well as user input sections
 var requirementList = document.createElement("ul")
 
+//----------------------------------
+//----------------------------------
 
+//--- FUNCTION: generateCheckbox () ---
+
+
+
+//----------------------------------
+//----------------------------------
+
+//--- FUNCTION: generatePassword () ---
 
 
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+
+//----------------------------------
+//----------------------------------
+
+//--- FUNCTION: writePassword () ---
 
 // Write password to the #password input
 function writePassword() {
@@ -56,7 +72,10 @@ function writePassword() {
 
 }
 
+//----------------------------------
+//----------------------------------
 
+// --- FUNCTION.EVENTLISTENER: generateBtn.addEventListener() ---
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
