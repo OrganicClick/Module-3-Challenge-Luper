@@ -155,6 +155,11 @@ function confirmSelections () {
   // Creates passwordValidation variable, which uses parseInt method to return user input only as an integer
   var passwordValidation = parseInt(passwordLengthInput);
 
+  // 
+  var lowercaseValidation = document.querySelector();
+  var uppercaseValidation = document.querySelector();
+  var numericValidation = document.querySelector();
+  var specialValidation = document.querySelector();
 }
 
 
