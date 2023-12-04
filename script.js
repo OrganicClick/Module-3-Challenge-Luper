@@ -48,11 +48,16 @@ function generateForm () {
   userInstructions.textContent = `In order for this application to generate a secure, random password, 
   you must appropriately answer the following password requirement prompts.
  `;
-// Appends userInstruction var to formSection var
- formSection.appendChild(userInstruction)
+// Appends userInstructions var to formSection var
+  formSection.appendChild(userInstructions)
 
  // Adds a list element, which will contain password requirement prompts, as well as user input sections
-var requirementList = document.createElement("ul")
+  var requirementList = document.createElement("ul")
+
+  // Appends requirementList var to userInstructions var
+  userInstructions.appendChild(requirementList)
+
+  //
 
 
 
@@ -64,7 +69,7 @@ var requirementList = document.createElement("ul")
 
 
 
-//----------------------------------
+//----------------------------------  
 //----------------------------------
 
 //--- FUNCTION: generatePassword () ---
