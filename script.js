@@ -128,6 +128,10 @@ function generateCheckbox () {
  // Creates a checkbox element able to receive user input
  var checkbox = document.createElement("input");
   checkbox.type = "checkbox";
+
+  // Appends the checkbox variable to the checkboxContainer element
+ checkboxContainer.appendChild(checkbox);
+
 }
 
 
