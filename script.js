@@ -101,6 +101,10 @@ function generateForm () {
   // Appends the passwordCharacterTypeItem to the requirementList
   requirementList.appendChild(passwordCharacterTypeItem);
 
+  // Creates a confirm button with text CONFIRM inside the button
+  var confirmButton = document.createElement("button");
+  confirmButton.innerText = 'CONFIRM';
+
 }
 //----------------------------------
 //----------------------------------
