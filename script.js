@@ -119,6 +119,12 @@ function generateForm () {
 
 //--- FUNCTION: generateCheckbox () ---
 
+// Creates function that will generate checkboxes for user to select the character type options for their randomly generated
+// password.
+function generateCheckbox () {
+ 
+}
+
 
 //----------------------------------  
 //----------------------------------
