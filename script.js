@@ -111,8 +111,8 @@ function generateForm () {
   // Appends confirmButton to formSection directly
   formSection.appendChild(confirmButton);
 
-  // Appends formSection to h2 section of body of HTML document
-  document.body.h2.appendChild(formSection);
+  // Appends formSection to body of HTML document
+  document.body.appendChild(formSection);
 }
 //----------------------------------
 //----------------------------------
