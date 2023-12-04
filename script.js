@@ -85,7 +85,11 @@ function generateForm () {
   var passwordCharacterTypeLabel = document.createElement("label");
   passwordCharacterTypeLabel.textContent = `MUST contain at least 2 of the following character types.`
 
-  
+  // Creates variables that will ultimately call generateCheckbox function to create interactable checkboxes for user
+  var lowercaseCheckbox = generateCheckbox("Lowercase Letters");
+  var uppercaseCheckbox = generateCheckbox("Uppercase Letters");
+  var numericCheckbox = generateCheckbox("Numbers");
+  var specialCheckbox = generateCheckbox("Special Characters");
 
 
 
