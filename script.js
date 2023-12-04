@@ -98,6 +98,9 @@ function generateForm () {
   passwordCharacterTypeItem.appendChild(numericCheckbox);
   passwordCharacterTypeItem.appendChild(specialCheckbox);
 
+  // Appends the passwordCharacterTypeItem to the requirementList
+  requirementList.appendChild(passwordCharacterTypeItem);
+
 }
 //----------------------------------
 //----------------------------------
