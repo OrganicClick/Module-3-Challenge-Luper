@@ -105,6 +105,9 @@ function generateForm () {
   var confirmButton = document.createElement("button");
   confirmButton.innerText = 'CONFIRM';
 
+  // Adds eventListener to button for user to click, which will call the confirmSelections function
+  confirmButton.addEventListener("click", confirmSelections)
+
 }
 //----------------------------------
 //----------------------------------
