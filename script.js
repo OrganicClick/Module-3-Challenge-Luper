@@ -1,6 +1,7 @@
 // Assignment code here
-//
+
 //-- Form Section Code --
+
 //Creates HTML form element
 var formSection = document.createElement("form");
 
@@ -12,6 +13,12 @@ var userInstructions = document.createElement("p")
  `;
 // Appends userInstruction var to formSection var
  formSection.appendChild(userInstruction)
+
+ // Adds a list element, which will contain password requirement prompts, as well as user input sections
+var requirementList = document.createElement("ul")
+
+
+
 
 
 // Get references to the #generate element
