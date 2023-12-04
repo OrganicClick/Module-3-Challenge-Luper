@@ -143,6 +143,13 @@ function generateCheckbox () {
 
 //--- FUNCTION: confirmSelections () ---
 
+// Creates function that will confirm the input the user has provided to the form as being within pre-established
+// parameters for the given fields.
+
+function confirmSelections () {
+  
+}
+
 
 
 
