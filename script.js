@@ -74,6 +74,8 @@ function generateForm () {
   passwordLengthItem.appendChild(passwordLengthLabel)
   passwordLengthItem.appendChild(passwordLengthInput)
 
+  // Appends the passwordLengthItem to the requirementList
+  requirementList.appendChild(passwordLengthItem)
 
   // Creates a list item, to be put in the requirementList, prompting user to make selections on the character
   // types to include in their generated password
