@@ -23,6 +23,17 @@
 
 //----------------------------------
 //----------------------------------
+//----------------------------------
+//----------------------------------
+//-------- APPLICATION CODE ---------
+
+
+// --- GLOBAL VARIABLE ---
+// Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
+
+//----------------------------------
+//----------------------------------
 
 //--- FUNCTION: generateForm () ---
 
@@ -55,8 +66,6 @@ var requirementList = document.createElement("ul")
 
 
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
 
 //----------------------------------
 //----------------------------------
