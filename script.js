@@ -91,7 +91,12 @@ function generateForm () {
   var numericCheckbox = generateCheckbox("Numbers");
   var specialCheckbox = generateCheckbox("Special Characters");
 
-
+  // Appends the checkbox variables and passwordCharacterTypeLabel to the passwordCharacterTypeItem
+  passwordCharacterTypeItem.appendChild(passwordCharacterTypeLabel);
+  passwordCharacterTypeItem.appendChild(lowercaseCheckbox);
+  passwordCharacterTypeItem.appendChild(uppercaseCheckbox);
+  passwordCharacterTypeItem.appendChild(numericCheckbox);
+  passwordCharacterTypeItem.appendChild(specialCheckbox);
 
 }
 //----------------------------------
