@@ -124,6 +124,10 @@ function generateForm () {
 function generateCheckbox () {
   // Creates a <div> container HTML element to contain the created checkbox
  var checkboxContainer = document.createElement("div");
+
+ // Creates a checkbox element able to receive user input
+ var checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
 }
 
 
