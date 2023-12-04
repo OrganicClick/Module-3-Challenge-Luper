@@ -148,9 +148,12 @@ function generateCheckbox () {
 // parameters for the given fields.
 
 function confirmSelections () {
-  
+
   // Tells function to use querySelector() to find passwordLengthInput id in the HTML
   var passwordLengthInput = document.querySelector("#passwordLengthInput");
+
+  // Creates passwordValidation variable, which uses parseInt method to return user input only as an integer
+  var passwordValidation = parseInt(passwordLengthInput);
 
 }
 
