@@ -66,6 +66,7 @@ function generateForm () {
 
   // Creates an input area (and parameters for input) for password length
   var passwordLengthInput = document.createElement("input");
+  passwordLengthInput.id = "passwordLengthInput";
   passwordLengthInput.type = "number";
   passwordLengthInput.min = "8";
   passwordLengthInput.max = "128";
