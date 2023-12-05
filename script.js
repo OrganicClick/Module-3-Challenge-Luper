@@ -144,12 +144,6 @@ function generateCheckbox () {
  return checkboxContainer;
 }
 
-// Appends the checkbox variables to the body of HTML
-document.body.appendChild(lowercaseCheckbox);
-document.body.appendChild(uppercaseCheckbox);
-document.body.appendChild(numericCheckbox);
-document.body.appendChild(specialCheckbox);
-
 //----------------------------------  
 //----------------------------------
 
