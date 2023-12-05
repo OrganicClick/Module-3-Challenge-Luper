@@ -165,7 +165,7 @@ function confirmSelections () {
   var passwordLengthInput = document.querySelector("#passwordLengthInput");
 
   // Creates passwordValidation variable, which uses parseInt method to return user input only as an integer
-  var passwordValidation = parseInt(passwordLengthInput.value);
+  var passwordLengthValidation = parseInt(passwordLengthInput.value);
 
   // Creates variables to validate user input for selecting given checkboxes
   var lowercaseValidation = document.querySelector("#lowercaseCheckbox").checked;
@@ -174,7 +174,7 @@ function confirmSelections () {
   var specialValidation = document.querySelector("specialCheckbox").checked;
 
   // Adds logic to passwordValidation so that user may only enter the appropriate password length
-  if (passwordValidation < 8 || passwordValidation > 128) {
+  if (passwordLengthValidation < 8 || passwordLengthValidation > 128) {
     alert("You must enter a password length between 8 and 128 characters.")
   return;
 }
