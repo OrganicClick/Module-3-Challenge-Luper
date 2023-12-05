@@ -32,6 +32,12 @@
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+// Creates variables that will ultimately call generateCheckbox function to create interactable checkboxes for user
+var lowercaseCheckbox = generateCheckbox("Lowercase Letters");
+var uppercaseCheckbox = generateCheckbox("Uppercase Letters");
+var numericCheckbox = generateCheckbox("Numbers");
+var specialCheckbox = generateCheckbox("Special Characters");
+
 //----------------------------------
 //----------------------------------
 
@@ -85,12 +91,6 @@ function generateForm () {
   // Creates a prompt for user notifying them that they must select two of the following character types
   var passwordCharacterTypeLabel = document.createElement("label");
   passwordCharacterTypeLabel.textContent = `MUST contain at least 2 of the following character types.`
-
-  // Creates variables that will ultimately call generateCheckbox function to create interactable checkboxes for user
-  var lowercaseCheckbox = generateCheckbox("Lowercase Letters");
-  var uppercaseCheckbox = generateCheckbox("Uppercase Letters");
-  var numericCheckbox = generateCheckbox("Numbers");
-  var specialCheckbox = generateCheckbox("Special Characters");
 
   // Appends the checkbox variables and passwordCharacterTypeLabel to the passwordCharacterTypeItem
   passwordCharacterTypeItem.appendChild(passwordCharacterTypeLabel);
