@@ -194,24 +194,21 @@ function confirmSelections () {
 
 function generatePassword() {
 
-  // Define character sets based on user selections
-  var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
-  var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var numericChars = "0123456789";
-  var specialChars = "!@#$%^&*()_-+=";
+  // Added functional placeholder to generate an actual random password... NEEDS TO BE CHANGED SO THAT IT
+  // TAKES USER INPUT AND OUTPUTS RANDOMLY GENERATED PASSWORD WITH ACTUAL SELECTIONS CONSIDERED
+  let password = '';
+  let passwordLength = 12;
+  let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
+      'abcdefghijklmnopqrstuvwxyz0123456789@#$';
 
-  // Get user selections
-  var lowercaseCheckbox = document.querySelector("#lowercaseCheckbox").checked;
-  var uppercaseCheckbox = document.querySelector("#uppercaseCheckbox").checked;
-  var numericCheckbox = document.querySelector("#numericCheckbox").checked;
-  var specialCheckbox = document.querySelector("#specialCheckbox").checked;
+  for (let i = 1; i <= 8; i++) {
+      let char = Math.floor(Math.random()
+          * str.length + 1);
 
-  // Concatenate selected character sets
-  var allChars = "";
-  if (lowercaseCheckbox) allChars += lowercaseChars;
-  if (uppercaseCheckbox) allChars += uppercaseChars;
-  if (numericCheckbox) allChars += numericChars;
-  if (specialCheckbox) allChars += specialChars;
+      pass += str.charAt(char)
+  }
+
+  return password;
 }
 
 //----------------------------------
