@@ -165,13 +165,13 @@ function confirmSelections () {
   var passwordLengthInput = document.querySelector("#passwordLengthInput");
 
   // Creates passwordValidation variable, which uses parseInt method to return user input only as an integer
-  var passwordValidation = parseInt(passwordLengthInput);
+  var passwordValidation = parseInt(passwordLengthInput.value);
 
-  // 
-  var lowercaseValidation = document.querySelector();
-  var uppercaseValidation = document.querySelector();
-  var numericValidation = document.querySelector();
-  var specialValidation = document.querySelector();
+  // Creates variables to validate user input for selecting given checkboxes
+  var lowercaseValidation = document.querySelector("#lowercaseCheckbox").checked;
+  var uppercaseValidation = document.querySelector("#uppercaseCheckbox").checked;
+  var numericValidation = document.querySelector("#numericCheckbox").checked;
+  var specialValidation = document.querySelector("specialCheckbox").checked;
 }
 
 
