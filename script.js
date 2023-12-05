@@ -159,6 +159,8 @@ function generateCheckbox () {
 
 function confirmSelections () {
 
+  //
+
   // Tells function to use querySelector() to find passwordLengthInput id in the HTML
   var passwordLengthInput = document.querySelector("#passwordLengthInput");
 
@@ -182,6 +184,9 @@ function confirmSelections () {
     alert("You must select at least 2 character types.");
     return;
   }
+
+  //Tells the application to run the writePassword function after confirming user selections
+  writePassword();
 }
 
 
