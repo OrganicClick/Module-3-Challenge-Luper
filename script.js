@@ -32,11 +32,18 @@
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-// Creates variables that will ultimately call generateCheckbox function to create interactable checkboxes for user
+// Creates variables and their id's that will ultimately call generateCheckbox function to create interactable checkboxes for user
 var lowercaseCheckbox = generateCheckbox("Lowercase Letters");
+lowercaseCheckbox.id = "Lowercase Letters";
+
 var uppercaseCheckbox = generateCheckbox("Uppercase Letters");
+uppercaseCheckbox.id = "Uppercase Letters";
+
 var numericCheckbox = generateCheckbox("Numbers");
+numericCheckbox.id = "Numbers";
+
 var specialCheckbox = generateCheckbox("Special Characters");
+specialCheckbox.id = "Special Characters";
 
 //----------------------------------
 //----------------------------------
