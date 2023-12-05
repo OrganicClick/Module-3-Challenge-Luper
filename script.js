@@ -172,6 +172,12 @@ function confirmSelections () {
   var uppercaseValidation = document.querySelector("#uppercaseCheckbox").checked;
   var numericValidation = document.querySelector("#numericCheckbox").checked;
   var specialValidation = document.querySelector("specialCheckbox").checked;
+
+  // Adds logic to passwordValidation so that user may only enter the appropriate password length
+  if (passwordValidation < 8 || passwordValidation > 128) {
+    alert("You must enter a password length between 8 and 128 characters.")
+  return;
+}
 }
 
 
