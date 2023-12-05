@@ -177,7 +177,13 @@ function confirmSelections () {
   if (passwordLengthValidation < 8 || passwordLengthValidation > 128) {
     alert("You must enter a password length between 8 and 128 characters.")
   return;
-}
+  }
+
+  // Creates an if statement (placeholder) for logic to push user to select at least 2 character type checkboxes
+  if (!(lowercaseValidation || uppercaseValidation || numericValidation || specialValidation)) {
+    alert("You must select at least 2 character types.");
+    return;
+  }
 }
 
 
