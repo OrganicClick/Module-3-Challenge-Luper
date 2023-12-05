@@ -159,7 +159,8 @@ function generateCheckbox () {
 
 function confirmSelections () {
 
-  //
+  // Prevent default form submission behavior
+  event.preventDefault();
 
   // Tells function to use querySelector() to find passwordLengthInput id in the HTML
   var passwordLengthInput = document.querySelector("#passwordLengthInput");
