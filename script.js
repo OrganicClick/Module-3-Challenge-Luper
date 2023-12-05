@@ -52,6 +52,10 @@ specialCheckbox.id = "specialCheckbox";
 
 //Creates function to generate an HTML form with contents within 
 function generateForm () {
+
+  // References the container element for .card-body so that rest of code can be appended to proper location in form
+  var container = document.querySelector(".card-body");
+
   //Creates HTML form element
   var formSection = document.createElement("form");
 
@@ -119,8 +123,8 @@ function generateForm () {
   // Appends confirmButton to formSection directly
   formSection.appendChild(confirmButton);
 
-  // Appends formSection to body of HTML document
-  document.body.appendChild(formSection);
+  // Appends formSection to defined container variable to referenced location in HTML document
+  container.appendChild(formSection);
 }
 //----------------------------------
 //----------------------------------
