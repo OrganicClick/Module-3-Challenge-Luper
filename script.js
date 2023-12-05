@@ -217,4 +217,5 @@ function writePassword() {
 // --- FUNCTION.EVENTLISTENER: generateBtn.addEventListener() ---
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// Altered this function.eventlistener to better reflect that I want a form to generate when this button is clicked
+generateBtn.addEventListener("click", generateForm);
