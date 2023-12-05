@@ -192,8 +192,27 @@ function confirmSelections () {
 
 //--- FUNCTION: generatePassword () ---
 
+function generatePassword() {
 
+  // Define character sets based on user selections
+  var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+  var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numericChars = "0123456789";
+  var specialChars = "!@#$%^&*()_-+=";
 
+  // Get user selections
+  var lowercaseCheckbox = document.querySelector("#lowercaseCheckbox").checked;
+  var uppercaseCheckbox = document.querySelector("#uppercaseCheckbox").checked;
+  var numericCheckbox = document.querySelector("#numericCheckbox").checked;
+  var specialCheckbox = document.querySelector("#specialCheckbox").checked;
+
+  // Concatenate selected character sets
+  var allChars = "";
+  if (lowercaseCheckbox) allChars += lowercaseChars;
+  if (uppercaseCheckbox) allChars += uppercaseChars;
+  if (numericCheckbox) allChars += numericChars;
+  if (specialCheckbox) allChars += specialChars;
+}
 
 //----------------------------------
 //----------------------------------
